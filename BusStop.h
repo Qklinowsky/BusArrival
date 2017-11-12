@@ -1,20 +1,15 @@
 #ifndef BUSSTOP_H
 #define BUSSTOP_H
 #include <iostream>
-
-using namespace std;
+#include <string>
 
 class BusStop {
 public:
-    BusStop(const string& s);
-    BusStop(const BusStop& orig);
+    BusStop(const std::string& s);
     virtual ~BusStop();
-    string getName();
+    std::string getName();
 private:
-    string name;
-    
-    
-
+    std::string name;
 };
 
 #endif /* BUSSTOP_H */

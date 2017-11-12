@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/BusRoute.o \
 	${OBJECTDIR}/BusStop.o \
+	${OBJECTDIR}/RouteSegment.o \
 	${OBJECTDIR}/TimeTable.o \
 	${OBJECTDIR}/main.o
 
@@ -68,22 +69,27 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/busarrival: ${OBJECTFILES}
 ${OBJECTDIR}/BusRoute.o: BusRoute.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusRoute.o BusRoute.cpp
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusRoute.o BusRoute.cpp
 
 ${OBJECTDIR}/BusStop.o: BusStop.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusStop.o BusStop.cpp
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusStop.o BusStop.cpp
+
+${OBJECTDIR}/RouteSegment.o: RouteSegment.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/RouteSegment.o RouteSegment.cpp
 
 ${OBJECTDIR}/TimeTable.o: TimeTable.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TimeTable.o TimeTable.cpp
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/TimeTable.o TimeTable.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -g -std=c++14 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

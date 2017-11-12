@@ -1,26 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   TimeTable.h
- * Author: kondzio
- *
- * Created on October 16, 2017, 8:55 PM
- */
-
 #ifndef TIMETABLE_H
 #define TIMETABLE_H
 
+#include <list>
+#include "BusRoute.h"
+
 class TimeTable {
 public:
-    TimeTable();
-    TimeTable(const TimeTable& orig);
+    TimeTable(list<BusRoute> routes);
     virtual ~TimeTable();
+    
+    void showTimeTable(BusRoute& route, BusStop& stop);
+    
 private:
-
+    list<BusRoute> routes;
+    
+    string formatTime(int hourInMinutes);
 };
 
 #endif /* TIMETABLE_H */
