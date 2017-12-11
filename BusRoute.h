@@ -13,6 +13,7 @@ public:
     BusRoute(const string& name, const list<RouteSegment>& r, list<int> departureTimeMinutes);
     BusRoute(const BusRoute& orig);
     virtual ~BusRoute();
+    void printRoute(BusStop& b);
 
     string getName();
     BusStop getDirection();

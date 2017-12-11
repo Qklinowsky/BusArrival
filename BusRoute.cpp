@@ -64,3 +64,19 @@ BusStop BusRoute::getDirection() {
     return route.back().getDestination();
 }
 
+void BusRoute::printRoute(BusStop& startingStop) {
+    std::cout << "Trasa: " << endl;
+    list<BusStop> stops = getBusStops();
+    for (auto stop : stops) {
+        if(startingStop == stop){
+            std::cout << "*";
+        }
+        std::cout << stop.getName() << endl;
+
+
+    }
+
+
+}
+
+
