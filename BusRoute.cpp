@@ -1,6 +1,6 @@
 #include "BusRoute.h"
 
-BusRoute::BusRoute(const list<RouteSegment> &r, list<int> departureTimeMinutes) : route(r), departureTimeMinutes(departureTimeMinutes) {
+BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<int> departureTimeMinutes) : name(name), route(r), departureTimeMinutes(departureTimeMinutes) {
 }
 
 BusRoute::BusRoute(const BusRoute& orig) {
@@ -16,7 +16,7 @@ list<BusStop> BusRoute::getBusStops() {
         allBusStops.push_back(it->getOrigin());
         it++;
     }
-    allBusStops.push_back(route.end()->getDestination());
+    allBusStops.push_back(route.back().getDestination());
     return allBusStops;
 }
 
@@ -55,3 +55,12 @@ bool BusRoute::contains(list<BusStop> busStops, BusStop stop) {
     }
     return false;
 }
+
+string BusRoute::getName() {
+    return name;
+}
+
+BusStop BusRoute::getDirection() {
+    return route.back().getDestination();
+}
+

@@ -8,6 +8,11 @@ TimeTable::~TimeTable() {
 }
 
 void TimeTable::showTimeTable(BusRoute& route, BusStop& stop) {
+    string routeName = route.getName();
+    std::cout << "Rozkład jazdy dla lini: " << routeName << endl ;
+    std::cout << "Dla przystanku: " <<stop.getName() << endl ;
+    std::cout << "W kierunku: " << route.getDirection().getName() << endl;
+    
     list<int> busStopDepartureTimes = route.getDepartureTime(stop);
     for (int departureTime : busStopDepartureTimes) {
         std::cout << formatTime(departureTime) << endl;

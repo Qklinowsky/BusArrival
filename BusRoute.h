@@ -10,7 +10,7 @@ using namespace std;
 
 class BusRoute {
 public:
-    BusRoute(const list<RouteSegment>& r, list<int> departureTimeMinutes);
+    BusRoute(const string& name, const list<RouteSegment>& r, list<int> departureTimeMinutes);
     BusRoute(const BusRoute& orig);
     virtual ~BusRoute();
 
@@ -22,6 +22,7 @@ public:
 private:
     list<RouteSegment> route;
     list <int> departureTimeMinutes;
+    string name;
     
     bool contains(list<BusStop> busStops, BusStop stop);
 };
