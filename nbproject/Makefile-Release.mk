@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/BusRoute.o \
 	${OBJECTDIR}/BusStop.o \
+	${OBJECTDIR}/DataImporter.o \
 	${OBJECTDIR}/RouteSegment.o \
 	${OBJECTDIR}/TimeTable.o \
 	${OBJECTDIR}/main.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/BusStop.o: BusStop.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/BusStop.o BusStop.cpp
+
+${OBJECTDIR}/DataImporter.o: DataImporter.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DataImporter.o DataImporter.cpp
 
 ${OBJECTDIR}/RouteSegment.o: RouteSegment.cpp
 	${MKDIR} -p ${OBJECTDIR}

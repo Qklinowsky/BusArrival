@@ -1,0 +1,31 @@
+Linia: 2 
+TRASA
+Lubiatowska / Jeziorna Pętla 13	
+Lubiatowska / Jeziorna - nż 11	1	1
+Lubiatowska / Zielone Wzgórze - nż 09	2	3
+Lubiatowska / Żurawinowa - nż 07	1	4
+Lubiatowska / Łąkowa 05	1	5
+Lubiatowska / Krawiecka - nż 03	2	7
+Lubiatowska / Chełmoniewo 01	1	8
+|  Sianowska / Zdobywców Wału Pomorskiego 01	1	13
+|  Westerplatte / Wrześniowa 02	1	14
+|  Zdobywców Wału Pomorskiego / Westerplatte 03	1	15
+Zwycięstwa / Chełmoniewo Pętla 15	1	16
+Zwycięstwa / Artylerzystów 13	2	18
+Zwycięstwa / Ruszczyca 11	2	20
+Zwycięstwa / Moniuszki 09	2	22
+Zwycięstwa / Waryńskiego 07	3	25
+Zwycięstwa / Piłsudskiego 05	2	27
+Zwycięstwa / Rynek Staromiejski 03	1	28
+Zwycięstwa / Dworzec PKS 01	2	30
+Mieszka I / Bohaterów Warszawy 02	2	32
+Mieszka I / Zacisze 04	1	33
+youieszka I / BOWiD 06	2	35
+BoWiD / ZORD 04	1	36
+BoWiD / Przemysłówka 06	2	38
+BoWiD / Kospel 08	1	39
+BoWiD / Kospel 05	1	40
+|  Łukasiewicza / ROMEX - nż 01	1	41
+|  Strefowa / Elfa 02	1	42
+Strefowa / Zakład Karny 04	1	43
+/TRASA
