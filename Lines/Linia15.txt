@@ -1,0 +1,31 @@
+Linia: 15
+TRASA
+Chałubińskiego / Centrum Edukacji 03	
+Chałubińskiego / Szpital 01	2	2
+Piłsudskiego / Zubrzyckiego 03	2	4
+Orląt Lwowskich / Sawickiej 02	2	6
+Jana Pawła II / Politechnika 02	2	8
+Jana Pawła II / Staszica 04	2	10
+Władysława IV / Sikorskiego 03	2	12
+Władysława IV / Kutrzeby 01	1	13
+Monte Cassino / Bałtycka 04	2	15
+Armii Krajowej / Kościół 11	2	17
+|  Armii Krajowej / Dworzec PKP 01	1	18
+|  Armii Krajowej / Bank 04	1	19
+Morska / Bohaterów Warszawy 02	1	20
+Morska / Energetyków 04	1	21
+Przemysłowa / Morska 02	1	22
+Przemysłowa / Urząd Celny - nż 04	1	23
+BoWiD / Przemysłowa 02	1	24
+BoWiD / ZORD 04	1	25
+BoWiD / Przemysłówka 06	1	26
+BoWiD / Kospel 05	1	27
+Bohaterów Warszawy / GIPO 06	1	28
+|  Łukasiewicza / ROMEX - nż 01	1	28
+Łukasiewicza / NordGlass 03	1	29
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

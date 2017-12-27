@@ -1,0 +1,30 @@
+Linia: 4
+TRASA
+Armii Krajowej / Dworzec PKP 01	
+Krakusa i Wandy / Zwycięstwa 03	2	2
+Lechicka / Kolejowa 02	2	4
+Słowiańska / Lechicka 01	1	5
+Słowiańska / MEC 04	2	7
+Wenedów / Słowiańska 01	2	9
+Lutyków / Skargi 01	1	10
+Krakusa i Wandy / Lechicka 01	2	12
+Gnieźnieńska / Połczyńska 02	1	13
+Gnieźnieńska / Szkoła 04	1	14
+Gnieźnieńska / Strażacka 06	2	16
+Paderewskiego / Atrium	3	19
+Sybiraków / Paderewskiego - nż 02	2	21
+Sybiraków / 4 Marca - nż 04	1	22
+4 Marca / Wojska Polskiego 03	1	23
+4 Marca / Jednostka Wojskowa 01	1	24
+Traugutta / Nowowiejskiego 01	2	26
+Orląt Lwowskich / Sawickiej 02	3	29
+Jana Pawła II / Politechnika 02	2	31
+Jana Pawła II / Staszica 04	2	33
+Władysława IV / Akademicka 04	2	35
+Władysława IV / Pętla	2	37
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

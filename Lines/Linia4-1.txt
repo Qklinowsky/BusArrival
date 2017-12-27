@@ -1,0 +1,31 @@
+Linia: 4-1
+TRASA
+Władysława IV / Pętla	
+Władysława IV / Kwiatkowskiego 05	2	2
+Jana Pawła II / Władysława IV 05	1	3
+Jana Pawła II / Jagoszewskiego 03	2	5
+Jana Pawła II / Fałata 01	1	6
+Traugutta / Piłsudskiego 04	2	8
+Traugutta / Zgody 02	1	9
+4 Marca / Reymonta 02	2	11
+4 Marca / Wojska Polskiego 04	1	12
+Sybiraków / Działki - nż 01	2	15
+Paderewskiego / Sybiraków 01	1	16
+Paderewskiego / Atrium	2	18
+Gnieżnieńska / Paderewskiego 05	2	20
+Gnieźnieńska / 4 Marca 03	1	21
+Gnieźnieńska / Modrzejewskiej 01	2	23
+Krakusa i Wandy / Połczyńska 02	2	25
+Lutyków / Lechicka 02	1	26
+Wenedów / Osiedle 02	3	29
+Słowiańska / MEC 04	1	30
+Słowiańska / Lechicka 01	2	32
+Lechicka / Łużycka 01	2	34
+Powstańców Wielkopolskich / Szkoła 01	2	36
+Armii Krajowej / Bank 04	2	38
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

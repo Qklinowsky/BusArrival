@@ -10,6 +10,9 @@ public:
     virtual ~TimeTable();
     
     void showTimeTable(BusRoute& route, BusStop& stop);
+    list<string> availableRouteNames();
+    list<string> availableDestinations(string lineName);
+    list<string> availableBusStops(string lineName, string destination);
     
 private:
     list<BusRoute> routes;

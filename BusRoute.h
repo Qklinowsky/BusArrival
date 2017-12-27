@@ -14,7 +14,6 @@ using namespace std;
 class BusRoute {
 public:
     BusRoute(const string& name, const list<RouteSegment>& r, list<ptime> departureTimeMinutes);
-    BusRoute(const BusRoute& orig);
     virtual ~BusRoute();
     void printRoute(BusStop& b);
 

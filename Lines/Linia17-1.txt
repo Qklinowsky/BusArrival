@@ -1,0 +1,25 @@
+Linia: 17-1
+TRASA
+Langego / Pętla 03	
+Oskara Lange / Staszica 01	1	1
+Śniadeckich / Langego 03	1	2
+Śniadeckich / Jana Pawła II 01	2	4
+Jana Pawła II / Staszica 04	2	6
+Władysława IV / Sikorskiego 03	2	8
+Władysława IV / Kutrzeby 01	1	9
+Monte Cassino / Bałtycka 04	2	11
+Armii Krajowej / Kościół 11	2	13
+Armii Krajowej / Dworzec PKP 01	2	15
+Zwycięstwa / Dworzec PKS 01	1	16
+Mieszka I / Bohaterów Warszawy 02	2	18
+Bohaterów Warszawy / Mieszka I 02	2	20
+Bohaterów Warszawy / Brzozowa 04	1	21
+Bohaterów Warszawy / GIPO 06	2	23
+Łukasiewicza / ROMEX - nż 01	1	25
+Łukasiewicza / NordGlass 03	1	26
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

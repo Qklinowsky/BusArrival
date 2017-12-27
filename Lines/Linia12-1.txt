@@ -1,0 +1,49 @@
+Linia: 12-1
+TRASA
+  Zwycięstwa / Chełmoniewo Pętla 15	
+|  Zwycięstwa / Zdobywców Wału Pomorskiego 20	1	1
+|  Lubiatowska / Chełmoniewo 02	2	3
+|  Lubiatowska / Łąkowa 04	2	5
+Lubiatowska / Łąkowa 05	2	7
+Dzierżęcińska / Żurawia - nż 07	1	8
+Dzierżęcińska / Ptasia - nż 05	1	9
+Dzierżęcińska / Limbowa - nż 03	1	10
+Dzierżęcińska / Zagórzyno 01	1	11
+|  Zagórzyno / Pętla 02	1	12
+Wojska Polskiego / Szkoła 01	1	13
+Św. Wojciecha / Ogrodnictwo 03	1	14
+Św. Wojciecha / Cedrowa 01	1	15
+Zwycięstwa / Artylerzystów 13	2	17
+Zwycięstwa / Ruszczyca 11	2	19
+Traugutta / Nowowiejskiego 01	3	22
+Orląt Lwowskich / Sawickiej 02	2	24
+Jana Pawła II / Politechnika 02	2	26
+Jana Pawła II / Staszica 04	2	28
+Władysława IV / Sikorskiego 03	1	29
+Władysława IV / Kutrzeby 01	2	31
+Monte Cassino / Bałtycka 04	2	33
+Armii Krajowej / Kościół 11	2	35
+|  Armii Krajowej / Dworzec PKP 01	2	37
+Morska / Bohaterów Warszawy 02	2	39
+Energetyków / Morska 02	1	40
+Franciszkańska / Energetyków 02	1	41
+Franciszkańska / Bosmańska 04	2	43
+Pierścień / Franciszkańska 03	2	45
+Morska / Krańcowa 05	1	46
+Przemysłowa / Morska 02	1	47
+Przemysłowa / Urząd Celny - nż 04	2	49
+BoWiD / Przemysłowa 02	1	50
+Mieszka I / BOWiD 05	1	51
+Mieszka I / Miła 03	1	52
+Mieszka I / Szczecińska 01	1	53
+Szczecińska / Mieszka I 02	1	54
+Szczecińska / Brzozowa 04	1	55
+Szczecińska / Syrenki 06	1	56
+Szczecińska / Zakłady Usługowe 08	2	58
+Szczecińska / Pętla 09	1	59
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

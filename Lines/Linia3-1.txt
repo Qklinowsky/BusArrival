@@ -1,0 +1,24 @@
+Linia: 3-1
+TRASA
+Władysława IV / Pętla	
+Władysława IV / Kwiatkowskiego 05	2	2
+Władysława IV / Sikorskiego 03	1	3
+Władysława IV / Kutrzeby 01	1	4
+Monte Cassino / Bałtycka 04	2	6
+Armii Krajowej / Kościół 11	2	8
+Armii Krajowej / Dworzec PKP 01	2	10
+Krakusa i Wandy / Zwycięstwa 03	2	12
+Lechicka / Kolejowa 02	2	14
+Lechicka / Bumar 04	2	16
+Lechicka / Ogrodnictwo - nż 06	1	17
+Niekłonice / Drukarnia - nż	1	18
+|  Niekłonice Działki / Pętla	1	19
+Niekłonice / Działki	1	19
+Niekłonice - nż	1	20
+Niekłonice / Wieś 02	1	21
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

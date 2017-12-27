@@ -1,0 +1,24 @@
+Linia: 16-1
+TRASA
+Langego / Pętla 03	
+Oskara Lange / Staszica 01	1	1
+Śniadeckich / Langego 03	1	2
+Śniadeckich / Jana Pawła II 01	1	3
+Jana Pawła II / Staszica 04	2	5
+Władysława IV / Sikorskiego 03	2	7
+Władysława IV / Kutrzeby 01	2	9
+Monte Cassino / Bałtycka 04	2	11
+Armii Krajowej / Kościół 11	2	13
+Armii Krajowej / Dworzec PKP 01	3	16
+Krakusa i Wandy / Zwycięstwa 03	2	18
+Krakusa i Wandy / Lechicka 01	2	20
+Gnieźnieńska / Połczyńska 02	2	22
+Gnieźnieńska / Szkoła 04	1	23
+Gnieźnieńska / Strażacka 06	2	25
+Gnieźnieńska / Kamieniarska Pętla 08	1	26
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

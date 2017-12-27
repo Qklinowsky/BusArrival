@@ -1,0 +1,30 @@
+Linia: 15-1
+TRASA
+|  Łukasiewicza / NordGlass 03	
+|  Łukasiewicza / ROMEX - nż 02	1	1
+Bohaterów Warszawy / GIPO 06	0	0
+BoWiD / Kospel 08	2	3
+BoWiD / Royal Greenland 03	2	5
+BoWiD / Mieszka I 01	1	6
+Przemysłowa / Janex - nż 03	1	7
+Przemysłowa / Urząd Skarbowy 01	0	7
+Morska / Przemysłowa 03	2	9
+Morska / Kazel 01	2	11
+Armii Krajowej / Dworzec PKP 01	3	14
+Armii Krajowej / Bank 04	1	15
+Armii Krajowej / Niepodległości 06	2	17
+Monte Cassino / Podgórna 03	2	19
+Władysława IV / Wańkowicza 02	3	22
+Jana Pawła II / Władysława IV 05	1	23
+Jana Pawła II / Jagoszewskiego 03	2	25
+Jana Pawła II / Fałata 01	1	26
+Piłsudskiego / Traugutta 06	3	29
+Chałubińskiego / Szpital 02	2	31
+Chałubińskiego / Leśna 04	0	31
+Chałubińskiego / Centrum Edukacji 03	1	32
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

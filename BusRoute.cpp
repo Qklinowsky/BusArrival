@@ -3,9 +3,6 @@
 BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<ptime> departureTimeMinutes) : name(name), route(r), departureTimeMinutes(departureTimeMinutes) {
 }
 
-BusRoute::BusRoute(const BusRoute& orig) {
-}
-
 BusRoute::~BusRoute() {
 }
 

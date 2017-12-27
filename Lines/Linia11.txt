@@ -1,0 +1,25 @@
+Linia: 11
+TRASA
+Lechicka / Łużycka 01	
+Powstańców Wielkopolskich / Szkoła 01	1	1
+Zwycięstwa / Krakusa i Wandy 02	2	3
+Zwycięstwa / Słowackiego 04	2	5
+Zwycięstwa / Plac Wolności 06	2	7
+Zwycięstwa / Clausiusa 08	2	9
+Waryńskiego / Szymanowskiego 01	1	10
+Piłsudskiego / Waryńskiego 02	1	11
+Piłsudskiego / Moniuszki 04	3	14
+Orląt Lwowskich / Sawickiej 02	1	15
+Jana Pawła II / Politechnika 02	1	16
+Śniadeckich / Politechnika 02	2	18
+Śniadeckich / Kołłątaja 04	2	20
+Śniadeckich / Langego 06	1	21
+Oskara Lange / Tradycji 02	1	22
+Oskara Lange / Staszica 04	2	24
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY
+

@@ -1,0 +1,44 @@
+Linia: 6-1
+TRASA
+ŁABUSZ / Starowiejska Pętla 02	
+Starowiejska / Wilków Morskich - nż 03	2	2
+Starowiejska / Farmerska - nż 01	1	3
+Północna / Starowiejska - nż 03	1	4
+Północna / Torfowa - nż 01	1	5
+|  Jamneńska / Szkoła Pętla 03	2	10
+Jamneńska / Północna 01	1	11
+Koszalińska / Kwiatowa - nż 05	1	12
+Koszalińska / Żyzna - nż 03	1	13
+Koszalińska / Ariadna - nż 01	1	14
+Władysława IV / Działki - nż 13	3	17
+Władysława IV / Duńska - nż 11	1	18
+|  Duńska / Duńska 02	1	19
+Grecka / Grecka 02	1	20
+Francuska / Grecka 02	1	21
+Francuska / Fińska 03	1	22
+Holenderska / Maltańska 02	1	23
+Holenderska / Brytyjska 04	1	24
+Władysława IV / Holenderska - nż 07	1	25
+Władysława IV / Pierścień 07	2	27
+|  Władysława IV / Pętla	1	28
+Władysława IV / Kwiatkowskiego 05	1	29
+Władysława IV / Sikorskiego 03	2	31
+Władysława IV / Kutrzeby 01	2	33
+Monte Cassino / Młyńska 01	3	36
+Waryńskiego / Matejki 02	3	39
+Zwycięstwa / Waryńskiego 07	2	41
+Zwycięstwa / Piłsudskiego 05	3	42
+Zwycięstwa / Rynek Staromiejski 03	3	44
+|  Armii Krajowej / Bank 04	1	45
+Zwycięstwa / Dworzec PKS 01	1	46
+Szczecińska / Mieszka I 02	2	48
+Szczecińska / Brzozowa 04	1	49
+Szczecińska / Syrenki 06	2	51
+Szczecińska / Zakłady Usługowe 08	1	52
+Szczecińska / Pętla 09	2	51
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

@@ -1,0 +1,43 @@
+Linia: 6
+TRASA
+Szczecińska / Pętla 09	
+Szczecińska / Sklep Meblowy 05	1	1
+Szczecińska / ZDW 03	2	3
+Szczecińska / Jasna 01	2	5
+|  Armii Krajowej / Dworzec PKP 01	0	0
+Zwycięstwa / Krakusa i Wandy 02	2	7
+Zwycięstwa / Słowackiego 04	1	8
+Zwycięstwa / Plac Wolności 06	1	9
+Zwycięstwa / Clausiusa 08	3	12
+Waryńskiego / Szymanowskiego 01	2	14
+Kościuszki / Piłsudskiego 02	1	15
+Monte Cassino / Fałata 02	1	16
+Władysława IV / Wańkowicza 02	1	17
+Władysława IV / Akademicka 04	1	18
+|  Władysława IV / Pętla	1	19
+Władysława IV / Wiadukt 06	1	20
+Władysława IV / Holenderska - nż 08	1	21
+Holenderska / KTBS 03	1	22
+Holenderska / Orlik 01	1	23
+Francuska / Fińska 04	0	23
+Francuska / Francuska 01	1	24
+Władysława IV / Francuska - nż 10	1	25
+|  Duńska / Duńska 02	1	26
+Władysława IV / Duńska - nż 12	0	26
+Władysława IV / Działki - nż 14	1	27
+Koszalińska / Ariadna - nż 02	2	29
+Koszalińska / Żyzna - nż 04	1	30
+Koszalińska / Kwiatowa - nż 06	1	31
+Jamneńska / Północna 02	1	32
+|  Jamneńska / Szkoła Pętla 03	1	33
+Północna / Torfowa - nż 02	1	36
+Północna / Starowiejska - nż 04	1	37
+Starowiejska / Farmerska - nż 02	1	38
+Starowiejska / Wilków Morskich - nż 04	1	39
+ŁABUSZ / Starowiejska Pętla 02	1	40
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

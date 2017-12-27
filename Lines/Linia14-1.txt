@@ -1,0 +1,28 @@
+Linia: 14-1
+TRASA
+Franciszkańska / Bosmańska 04	
+Pierścień / Franciszkańska 03	1	1
+Morska / Krańcowa 05	1	2
+Morska / Przemysłowa 03	2	4
+Morska / Kazel 01	2	6
+Armii Krajowej / Dworzec PKP 01	3	9
+Zwycięstwa / Krakusa i Wandy 02	2	11
+Zwycięstwa / Słowackiego 04	2	13
+Zwycięstwa / Plac Wolności 06	1	14
+Zwycięstwa / Clausiusa 08	1	15
+Zwycięstwa / Grottgera 10	3	18
+Zwycięstwa / Tetmajera 12	2	20
+Traugutta / Nowowiejskiego 01	2	22
+Orląt Lwowskich / Sawickiej 02	3	25
+Jana Pawła II / Politechnika 02	2	27
+Śniadeckich / Politechnika 02	1	28
+Śniadeckich / Kołłątaja 04	1	29
+Śniadeckich / Langego 06	2	31
+Oskara Lange / Tradycji 02	1	32
+Oskara Lange / Staszica 04	1	33
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

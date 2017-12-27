@@ -2,6 +2,7 @@
 #define DATAIMPORTER_H
 
 #include<string>
+#include <list>
 
 #include "BusRoute.h"
 #include <boost/algorithm/string/predicate.hpp>
@@ -12,8 +13,12 @@ public:
     DataImporter();
     DataImporter(const DataImporter& orig);
     virtual ~DataImporter();
-    BusRoute import(const std::string& routeFile);
+    list<BusRoute> import(const std::string& folder);
+    BusRoute importFile(const std::string& routeFile);
+    
+    
 private:
+    
 
 };
 

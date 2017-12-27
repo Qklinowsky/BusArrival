@@ -8,9 +8,12 @@
 #include <boost/date_time/local_time_adjustor.hpp>
 #include <boost/regex.hpp>
 #include <boost/algorithm/string/regex.hpp>
+#include <boost/filesystem.hpp>
+
 
 using namespace boost::posix_time;
 using namespace boost::gregorian;
+using namespace boost::filesystem;
 
 DataImporter::DataImporter() {
 }
@@ -21,7 +24,26 @@ DataImporter::DataImporter(const DataImporter& orig) {
 DataImporter::~DataImporter() {
 }
 
-BusRoute DataImporter::import(const std::string& routeFile) {
+list<BusRoute> DataImporter::import(const std::string& folder) {
+    path folderPath(folder);
+
+    list<BusRoute> result;
+    if (is_directory(folderPath)) {
+        std::cout << folderPath << " is a directory containing:\n";
+
+        for (auto& entry : boost::make_iterator_range(directory_iterator(folderPath),{})) {
+            std::cout << entry << "\n";
+            result.push_back(importFile(entry.path().string()));
+        }
+        return result;
+    } else {
+        cout << "Nothing to import";
+        return result;
+    }
+
+}
+
+BusRoute DataImporter::importFile(const std::string& routeFile) {
     std::ifstream infile(routeFile);
 
     bool isRoute = false;
@@ -68,7 +90,7 @@ BusRoute DataImporter::import(const std::string& routeFile) {
         }
         if (isHours) {
             std::vector<std::string> splitVector;
-            boost::split_regex(splitVector, line, boost::regex( ": " ));
+            boost::split_regex(splitVector, line, boost::regex(": "));
             int hour = std::stoi(splitVector.at(0));
             std::string minutesStr = splitVector.at(1);
             std::vector<std::string> minutesVector;
@@ -79,20 +101,10 @@ BusRoute DataImporter::import(const std::string& routeFile) {
                 ptime fullTime = ptime(now.date(), hours(hour) + minutes(minute_int));
                 departureTimes.push_back(fullTime);
             }
-
         }
     }
-
     delete currentBusStop;
-
-
 
     BusRoute busRoute = BusRoute(lineName, route, departureTimes);
     return busRoute;
 }
-
-list<RouteSegment> readSegment(std::string& line) {
-
-}
-
-

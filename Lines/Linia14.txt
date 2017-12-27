@@ -1,0 +1,24 @@
+Linia: 14
+TRASA
+Langego / Pętla 03	
+Oskara Lange / Staszica 01	1	1
+Śniadeckich / Langego 03	1	2
+Śniadeckich / Jana Pawła II 01	2	4
+Jana Pawła II / Fałata 01	2	6
+Traugutta / Piłsudskiego 04	3	9
+Traugutta / Zgody 02	2	11
+Zwycięstwa / Moniuszki 09	2	13
+Zwycięstwa / Waryńskiego 07	3	16
+Zwycięstwa / Piłsudskiego 05	3	19
+Zwycięstwa / Rynek Staromiejski 03	2	21
+Armii Krajowej / Bank 04	2	23
+Morska / Bohaterów Warszawy 02	3	26
+Energetyków / Morska 02	2	28
+Franciszkańska / Energetyków 02	2	30
+Franciszkańska / Bosmańska 04	1	31
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

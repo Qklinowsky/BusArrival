@@ -8,27 +8,18 @@
 
 using namespace std;
 
-/*
- * 
- */
 int main(int argc, char** argv) {
     DataImporter importer;
-    BusRoute linia12 = importer.import("Linia12.txt");
-   
-    
-    list<BusRoute> wsyzsktieTrasy;
-    wsyzsktieTrasy.push_back(linia12);
-    
+    list<BusRoute> wsyzsktieTrasy = importer.import("Lines");
     TimeTable timeTable = TimeTable(wsyzsktieTrasy);
-    
+    BusRoute linia12 = wsyzsktieTrasy.front();
     BusStop pierwszy = linia12.getBusStops().front();
+    //wybor linii
+    //wybor kierunku
+    //wybor przystanku
+    //wypisanei showTimeTable
     
     timeTable.showTimeTable(linia12, pierwszy);
- 
-
-    
-            
-    
     return 0;
 }
 

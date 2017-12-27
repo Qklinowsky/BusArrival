@@ -1,0 +1,46 @@
+Linia: 12
+TRASA
+Szczecińska / Pętla 09	
+Szczecińska / Sklep Meblowy 05	1	1
+Szczecińska / ZDW 03	2	3
+Szczecińska / Jasna 01	2	5
+Mieszka I / Bohaterów Warszawy 02	1	6
+Mieszka I / Zacisze 04	1	7
+Mieszka I / BOWiD 06	1	8
+BoWiD / Mieszka I 01	1	9
+Przemysłowa / Janex - nż 03	1	10
+Przemysłowa / Urząd Skarbowy 01	0	10
+Morska / Sienkiewicza 06	2	12
+Spokojna / Franciszkańska 02	2	14
+Franciszkańska / Energetyków 01	2	16
+Armii Krajowej / Kościół 11	2	22
+|  Armii Krajowej / Dworzec PKP 01	3	19
+Armii Krajowej / Bank 04	2	21
+Armii Krajowej / Niepodległości 06	3	25
+Monte Cassino / Podgórna 03	1	26
+Władysława IV / Wańkowicza 02	2	28
+Jana Pawła II / Władysława IV 05	1	29
+Jana Pawła II / Jagoszewskiego 03	3	32
+Jana Pawła II / Fałata 01	2	34
+Traugutta / Piłsudskiego 04	2	36
+Traugutta / Zgody 02	1	37
+Zwycięstwa / 4 Marca 14	1	38
+Zwycięstwa / Zielona 16	1	39
+Św. Wojciecha / Kościół 02	1	40
+Św. Wojciecha / Jabłoniowa 04	1	41
+Św. Wojciecha / Wojska Polskiego 06	1	42
+Wojska Polskiego / Szkoła 02	1	43
+|  Zagórzyno / Pętla 02	1	44
+Dzierżęcińska / Limbowa - nż 02	1	45
+Dzierżęcińska / Ptasia - nż 04	1	46
+Dzierżęcińska / Żurawia - nż 06	1	47
+Lubiatowska / Łąkowa 05	1	48
+|  Lubiatowska / Krawiecka - nż 03	1	50
+|  Lubiatowska / Chełmoniewo 01	1	51
+Zwycięstwa / Chełmoniewo Pętla 15	1	52
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY
