@@ -16,13 +16,18 @@ DataImporter::~DataImporter() {
 
 BusRoute DataImporter::import(const std::string& routeFile) {
     std::ifstream infile(routeFile);
-
+    
     bool isRoute = false;
     string line;
     BusStop* previousBusStop = NULL;
     BusStop* currentBusStop = NULL;
+    string lineName;
     list<RouteSegment> route;
     while (!std::getline(infile, line).eof()) {
+        
+        if(boost::starts_with(line, "Linia:")){        
+            lineName = boost::algorithm::erase_first_copy(line,"Linia: ");
+        }
         if (line == "TRASA") {
             isRoute = true;
             continue;
@@ -52,7 +57,7 @@ BusRoute DataImporter::import(const std::string& routeFile) {
     departureTimes.push_back(240);
     departureTimes.push_back(440);
     
-    BusRoute busRoute = BusRoute("1", route, departureTimes);
+    BusRoute busRoute = BusRoute(lineName, route, departureTimes);
     return busRoute;
 }
 
