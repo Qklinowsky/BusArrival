@@ -57,7 +57,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L/lib -L/usr/lib -lboost_atomic -lboost_atomic -lboost_chrono -lboost_chrono -lboost_context -lboost_context -lboost_coroutine -lboost_coroutine -lboost_date_time -lboost_date_time -lboost_exception -lboost_filesystem -lboost_filesystem -lboost_graph -lboost_graph -lboost_graph_parallel -lboost_graph_parallel -lboost_iostreams -lboost_iostreams -lboost_locale -lboost_locale -lboost_log -lboost_log -lboost_log_setup -lboost_log_setup -lboost_math_c99 -lboost_math_c99 -lboost_math_c99f -lboost_math_c99f -lboost_math_c99l -lboost_math_c99l -lboost_math_tr1 -lboost_math_tr1 -lboost_math_tr1f -lboost_math_tr1f -lboost_math_tr1l -lboost_math_tr1l -lboost_mpi -lboost_mpi -lboost_mpi_python-py27 -lboost_mpi_python-py27 -lboost_mpi_python-py35 -lboost_mpi_python-py35 -lboost_mpi_python -lboost_mpi_python -lboost_prg_exec_monitor -lboost_prg_exec_monitor -lboost_program_options -lboost_program_options -lboost_python-py27 -lboost_python-py27 -lboost_python-py35 -lboost_python-py35 -lboost_python -lboost_python -lboost_random -lboost_random -lboost_regex -lboost_regex -lboost_serialization -lboost_serialization -lboost_signals -lboost_signals -lboost_system -lboost_system -lboost_test_exec_monitor -lboost_thread -lboost_thread -lboost_timer -lboost_timer -lboost_unit_test_framework -lboost_unit_test_framework -lboost_wave -lboost_wave -lboost_wserialization -lboost_wserialization
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

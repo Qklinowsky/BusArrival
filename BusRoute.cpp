@@ -1,6 +1,6 @@
 #include "BusRoute.h"
 
-BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<int> departureTimeMinutes) : name(name), route(r), departureTimeMinutes(departureTimeMinutes) {
+BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<ptime> departureTimeMinutes) : name(name), route(r), departureTimeMinutes(departureTimeMinutes) {
 }
 
 BusRoute::BusRoute(const BusRoute& orig) {
@@ -20,7 +20,7 @@ list<BusStop> BusRoute::getBusStops() {
     return allBusStops;
 }
 
-list<int> BusRoute::getDepartureTime(BusStop& stop) {
+list<ptime> BusRoute::getDepartureTime(BusStop& stop) {
     if (!contains(getBusStops(), stop)) {
         throw std::invalid_argument("This route doesn't contain this stop!");
     }
@@ -37,9 +37,9 @@ list<int> BusRoute::getDepartureTime(BusStop& stop) {
         }
         it++;
     }
-    list<int>busStopDepartureTimes;
+    list<ptime>busStopDepartureTimes;
     for (auto departureTime : departureTimeMinutes) {
-        int busStopDepartureTime = totalTimeTravel + departureTime;
+        ptime busStopDepartureTime = ptime(departureTime.date(), minutes(totalTimeTravel));
         busStopDepartureTimes.push_back(busStopDepartureTime);
     }
     return busStopDepartureTimes;

@@ -4,6 +4,8 @@
 #include<string>
 
 #include "BusRoute.h"
+#include <boost/algorithm/string/predicate.hpp>
+#include <boost/lexical_cast.hpp>
 
 class DataImporter {
 public:

@@ -29,3 +29,8 @@ BoWiD / Kospel 05	1	40
 |  Strefowa / Elfa 02	1	42
 Strefowa / Zakład Karny 04	1	43
 /TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY
