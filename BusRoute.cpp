@@ -38,7 +38,7 @@ list<ptime> BusRoute::getDepartureTime(BusStop& stop) {
     list<ptime> busStopDepartureTimes;
     for (auto departureTime : departureTimesFromOrigin) {
         BOOST_LOG_TRIVIAL(debug) << "Departure time from origin " << departureTime << ", totalTimeTravel=" << totalTimeTravel;
-        ptime busStopDepartureTime = ptime(departureTime + minutes(totalTimeTravel)); //todo add minutes to date
+        ptime busStopDepartureTime = ptime(departureTime + minutes(totalTimeTravel));
         BOOST_LOG_TRIVIAL(debug) << "Departure time for bus stop " << stop.getName() << ":" << busStopDepartureTime;
         busStopDepartureTimes.push_back(busStopDepartureTime);
     }
@@ -68,13 +68,14 @@ void BusRoute::printRoute(BusStop& startingStop) {
     std::cout << "Trasa: " << endl;
     vector<BusStop> stops = getBusStops();
     bool print = false;
-        int i = 1;
+    int i = 1;
     for (auto stop : stops) {
         if (startingStop == stop) {
             print = true;
         }
-        if(print){
-            std::cout << i << " - " << stop.getName() << endl;
+        if (print) {
+            int distanceMinutes = distanceInMinutes(startingStop, stop);
+            std::cout << i << " - " << stop.getName() << " " << "\t Czas przejazdu " << distanceMinutes << "m." << endl;
         }
         i++;
     }
@@ -84,4 +85,22 @@ bool BusRoute::operator<(const BusRoute& other) const {
     int thisName = std::stoi(name);
     int otherName = std::stoi(other.getName());
     return thisName < otherName;
+}
+
+int BusRoute::distanceInMinutes(BusStop from, BusStop to) {
+    bool counting = false;
+    int totalMinutes = 0;
+    for (auto segment : route) {
+        if (segment.getOrigin() == from) {
+            counting = true;
+        }
+        if (counting) {
+            totalMinutes += segment.getTravelTime();
+        }
+        if (segment.getDestination() == to) {
+            return totalMinutes;
+        }
+    }
+    throw std::invalid_argument("Destination stop not found.");
+
 }
