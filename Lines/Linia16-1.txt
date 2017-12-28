@@ -1,4 +1,4 @@
-Linia: 16-1
+Linia: 16
 TRASA
 Langego / Pętla 03	
 Oskara Lange / Staszica 01	1	1

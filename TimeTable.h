@@ -10,14 +10,14 @@ public:
     virtual ~TimeTable();
     
     void showTimeTable(BusRoute& route, BusStop& stop);
-    list<string> availableRouteNames();
-    list<string> availableDestinations(string lineName);
-    list<string> availableBusStops(string lineName, string destination);
+    vector<BusRoute> availableRoutes();
+    vector<BusStop> availableDestinations(string lineName);
+    vector<BusStop> availableBusStops(string lineName, BusStop destination);
+    BusRoute findRoute(string name, BusStop direction);
     
 private:
     list<BusRoute> routes;
-    
-    string formatTime(int hourInMinutes);
+    bool contains(vector<BusRoute> routes, BusRoute route);
 };
 
 #endif /* TIMETABLE_H */

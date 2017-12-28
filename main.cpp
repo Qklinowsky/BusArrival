@@ -8,18 +8,64 @@
 
 using namespace std;
 
+BusRoute chooseRoute(TimeTable table);
+BusStop chooseDirection(BusRoute route, TimeTable table);
+BusStop chooseBusStop(BusRoute route);
+
 int main(int argc, char** argv) {
     DataImporter importer;
     list<BusRoute> wsyzsktieTrasy = importer.import("Lines");
+
     TimeTable timeTable = TimeTable(wsyzsktieTrasy);
-    BusRoute linia12 = wsyzsktieTrasy.front();
-    BusStop pierwszy = linia12.getBusStops().front();
-    //wybor linii
-    //wybor kierunku
-    //wybor przystanku
-    //wypisanei showTimeTable
-    
-    timeTable.showTimeTable(linia12, pierwszy);
+    BusRoute route = chooseRoute(timeTable);
+    BusStop direction = chooseDirection(route, timeTable);
+    BusRoute foundRoute = timeTable.findRoute(route.getName(), direction);
+    BusStop chosenStop = chooseBusStop(foundRoute);
+    timeTable.showTimeTable(foundRoute, chosenStop);
     return 0;
 }
 
+BusRoute chooseRoute(TimeTable table) {
+    cout << "Wybierz linie z listy: \n";
+    vector<BusRoute> availableRoutes = table.availableRoutes();
+    int i = 0;
+    for (auto route : availableRoutes) {
+        cout << i << " - " << route.getName() << endl;
+        i++;
+    }
+    int option;
+    cin >> option;
+    return availableRoutes.at(option);
+}
+
+BusStop chooseDirection(BusRoute route, TimeTable table) {
+
+    cout << "Wybierz kierunek: \n";
+    vector<BusStop> availableDestinations = table.availableDestinations(route.getName());
+    int i = 0;
+    for (auto destiantion : availableDestinations) {
+        cout << i << " - " << destiantion.getName() << endl;
+        i++;
+    }
+    int option;
+    cin >> option;
+    return availableDestinations.at(option);
+
+}
+
+BusStop chooseBusStop(BusRoute route) {
+    cout << "Wybierz przystanek: \n";
+    vector<BusStop> busStops = route.getBusStops();
+    int i = 0;
+    for (auto stop : busStops) {
+        cout << i << " - " << stop.getName() << endl;
+        i++;
+    }
+    int option;
+    cin >> option;
+    return busStops.at(option);
+     
+
+
+
+}

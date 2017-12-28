@@ -17,17 +17,18 @@ public:
     virtual ~BusRoute();
     void printRoute(BusStop& b);
 
-    string getName();
+    string getName() const;
     BusStop getDirection();
-    list<BusStop> getBusStops();
+    vector<BusStop> getBusStops();
     list<ptime> getDepartureTime(BusStop& stop);
+    bool operator < (const BusRoute& other) const;
 
 private:
     list<RouteSegment> route;
     list <ptime> departureTimeMinutes;
     string name;
 
-    bool contains(list<BusStop> busStops, BusStop stop);
+    bool contains(vector<BusStop> busStops, BusStop stop);
 };
 
 #endif /* BUSROUTE_H */

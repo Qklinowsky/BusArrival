@@ -6,9 +6,9 @@ BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<ptime> 
 BusRoute::~BusRoute() {
 }
 
-list<BusStop> BusRoute::getBusStops() {
+vector<BusStop> BusRoute::getBusStops() {
     list<RouteSegment>::iterator it = route.begin();
-    list<BusStop> allBusStops;
+    vector<BusStop> allBusStops;
     while (it != route.end()) {
         allBusStops.push_back(it->getOrigin());
         it++;
@@ -42,8 +42,8 @@ list<ptime> BusRoute::getDepartureTime(BusStop& stop) {
     return busStopDepartureTimes;
 }
 
-bool BusRoute::contains(list<BusStop> busStops, BusStop stop) {
-    list<BusStop>::iterator it = busStops.begin();
+bool BusRoute::contains(vector<BusStop> busStops, BusStop stop) {
+    vector<BusStop>::iterator it = busStops.begin();
     while (it != busStops.end()) {
         if (it->getName() == stop.getName()) {
             return true;
@@ -53,7 +53,7 @@ bool BusRoute::contains(list<BusStop> busStops, BusStop stop) {
     return false;
 }
 
-string BusRoute::getName() {
+string BusRoute::getName() const {
     return name;
 }
 
@@ -63,17 +63,17 @@ BusStop BusRoute::getDirection() {
 
 void BusRoute::printRoute(BusStop& startingStop) {
     std::cout << "Trasa: " << endl;
-    list<BusStop> stops = getBusStops();
+    vector<BusStop> stops = getBusStops();
     for (auto stop : stops) {
-        if(startingStop == stop){
+        if (startingStop == stop) {
             std::cout << "*";
         }
         std::cout << stop.getName() << endl;
-
-
     }
-
-
 }
 
-
+bool BusRoute::operator<(const BusRoute& other) const {
+    int thisName = std::stoi(name);
+    int otherName = std::stoi(other.getName());
+    return thisName < otherName;
+}
