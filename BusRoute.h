@@ -22,13 +22,13 @@ public:
     vector<BusStop> getBusStops();
     list<ptime> getDepartureTime(BusStop& stop);
     bool operator< (const BusRoute& other) const;
+    bool contains(vector<BusStop> busStops, BusStop stop);
 
 private:
     list<RouteSegment> route;
     list <ptime> departureTimesFromOrigin;
     string name;
-
-    bool contains(vector<BusStop> busStops, BusStop stop);
+    int distanceInMinutes(BusStop from, BusStop to);
 };
 
 #endif /* BUSROUTE_H */

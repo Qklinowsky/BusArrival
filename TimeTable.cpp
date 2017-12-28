@@ -28,15 +28,15 @@ void TimeTable::showTimeTable(BusRoute& route, BusStop& stop) {
     route.printRoute(stop);
 }
 
-vector<BusRoute> TimeTable::availableRoutes() {
+vector<BusRoute> TimeTable::allAvailableRoutes() {
     vector<BusRoute> busRoutes;
     for (auto route : routes) {
-        if(!contains(busRoutes, route)){
+        if (!contains(busRoutes, route)) {
             busRoutes.push_back(route);
         }
-        
+
     }
-    std::sort (busRoutes.begin(), busRoutes.end()); 
+    std::sort(busRoutes.begin(), busRoutes.end());
 
     return busRoutes;
 }
@@ -55,11 +55,12 @@ vector<BusStop> TimeTable::availableDestinations(string lineName) {
 
 vector<BusStop> TimeTable::availableBusStops(string lineName, BusStop destination) {
     for (auto route : routes) {
-         if ((route.getName() == lineName) && (route.getDirection() == destination)) {
+        if ((route.getName() == lineName) && (route.getDirection() == destination)) {
             return route.getBusStops();
         }
     }
 }
+
 bool TimeTable::contains(vector<BusRoute> routes, BusRoute route) {
     vector<BusRoute>::iterator it = routes.begin();
     while (it != routes.end()) {
@@ -73,7 +74,7 @@ bool TimeTable::contains(vector<BusRoute> routes, BusRoute route) {
 
 BusRoute TimeTable::findRoute(string name, BusStop direction) {
     for (auto route : routes) {
-        if(route.getName() == name && route.getDirection() == direction){
+        if (route.getName() == name && route.getDirection() == direction) {
             return route;
         }
     }
@@ -81,6 +82,33 @@ BusRoute TimeTable::findRoute(string name, BusStop direction) {
 
 }
 
- 
+vector<BusStop> TimeTable::findMatchingBusStops(string busStopName) {
+    vector<BusStop> matchingBusStops;
+    for (auto route : routes) {
+        vector<BusStop> busStops = route.getBusStops();
+        for (auto stop : busStops) {
+            if (stop.getName().find(busStopName) != string::npos && !route.contains(matchingBusStops, stop)) {
+                matchingBusStops.push_back(stop);
+            }
+        }
+    }
+    return matchingBusStops;
+}
+
+vector<BusRoute> TimeTable::availableRoutes(BusStop stop) {
+    vector<BusRoute> availableRoutes = allAvailableRoutes();
+    vector<BusRoute> resultRoutes;
+    for (auto route : availableRoutes) {
+        if(route.contains(route.getBusStops(), stop)){
+            resultRoutes.push_back(route);
+        }
+    }
+    return resultRoutes;
+
+}
+
+
+
+
 
 
