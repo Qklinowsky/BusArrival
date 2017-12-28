@@ -67,11 +67,16 @@ BusStop BusRoute::getDirection() {
 void BusRoute::printRoute(BusStop& startingStop) {
     std::cout << "Trasa: " << endl;
     vector<BusStop> stops = getBusStops();
+    bool print = false;
+        int i = 1;
     for (auto stop : stops) {
         if (startingStop == stop) {
-            std::cout << "*";
+            print = true;
         }
-        std::cout << stop.getName() << endl;
+        if(print){
+            std::cout << i << " - " << stop.getName() << endl;
+        }
+        i++;
     }
 }
 
