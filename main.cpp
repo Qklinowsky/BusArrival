@@ -1,3 +1,4 @@
+#define BOOST_ALL_DYN_LINK
 #include <cstdlib>
 #include <iostream>
 #include <list>
@@ -5,14 +6,29 @@
 #include "BusRoute.h"
 #include "TimeTable.h"
 #include "DataImporter.h"
+#include <boost/log/core.hpp>
+#include <boost/log/trivial.hpp>
+#include <boost/log/expressions.hpp>
 
+namespace logging = boost::log;
 using namespace std;
 
 BusRoute chooseRoute(TimeTable table);
 BusStop chooseDirection(BusRoute route, TimeTable table);
 BusStop chooseBusStop(BusRoute route);
 
+void init()
+{
+    logging::core::get()->set_filter
+    (
+        logging::trivial::severity >= logging::trivial::debug
+    );
+}
+
+
+
 int main(int argc, char** argv) {
+    init();
     DataImporter importer;
     list<BusRoute> wsyzsktieTrasy = importer.import("Lines");
 

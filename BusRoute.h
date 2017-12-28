@@ -21,11 +21,11 @@ public:
     BusStop getDirection();
     vector<BusStop> getBusStops();
     list<ptime> getDepartureTime(BusStop& stop);
-    bool operator < (const BusRoute& other) const;
+    bool operator< (const BusRoute& other) const;
 
 private:
     list<RouteSegment> route;
-    list <ptime> departureTimeMinutes;
+    list <ptime> departureTimesFromOrigin;
     string name;
 
     bool contains(vector<BusStop> busStops, BusStop stop);

@@ -47,8 +47,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=
-CXXFLAGS=
+CCFLAGS=-lboost_system -pthread -DBOOST_LOG_DYN_LINK
+CXXFLAGS=-lboost_system -pthread -DBOOST_LOG_DYN_LINK
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -65,7 +65,7 @@ LDLIBSOPTIONS=-L/lib -L/usr/lib -lboost_atomic -lboost_atomic -lboost_chrono -lb
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/busarrival: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/busarrival ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/busarrival ${OBJECTFILES} ${LDLIBSOPTIONS} -DBOOST_LOG_DYN_LINK
 
 ${OBJECTDIR}/BusRoute.o: BusRoute.cpp
 	${MKDIR} -p ${OBJECTDIR}

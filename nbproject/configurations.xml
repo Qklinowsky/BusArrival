@@ -50,6 +50,7 @@
           <incDir>
             <pElem>/usr/include/boost</pElem>
           </incDir>
+          <commandLine>-lboost_system -pthread -DBOOST_LOG_DYN_LINK</commandLine>
         </ccTool>
         <linkerTool>
           <linkerAddLib>
@@ -134,6 +135,7 @@
             <linkerLibLibItem>boost_wserialization</linkerLibLibItem>
             <linkerLibLibItem>boost_wserialization</linkerLibLibItem>
           </linkerLibItems>
+          <commandLine>-DBOOST_LOG_DYN_LINK</commandLine>
         </linkerTool>
       </compileType>
       <item path="BusRoute.cpp" ex="false" tool="1" flavor2="0">

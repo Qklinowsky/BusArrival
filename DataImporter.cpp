@@ -9,11 +9,14 @@
 #include <boost/regex.hpp>
 #include <boost/algorithm/string/regex.hpp>
 #include <boost/filesystem.hpp>
+#include <boost/log/trivial.hpp>
+
 
 
 using namespace boost::posix_time;
 using namespace boost::gregorian;
 using namespace boost::filesystem;
+using namespace boost::log;
 
 DataImporter::DataImporter() {
 }
@@ -29,10 +32,10 @@ list<BusRoute> DataImporter::import(const std::string& folder) {
 
     list<BusRoute> result;
     if (is_directory(folderPath)) {
-        std::cout << folderPath << " is a directory containing:\n";
+        BOOST_LOG_TRIVIAL(debug) << "Directory " << folderPath <<  " is a directory containing:";
 
         for (auto& entry : boost::make_iterator_range(directory_iterator(folderPath),{})) {
-            std::cout << entry << "\n";
+            BOOST_LOG_TRIVIAL(debug) << entry;
             result.push_back(importFile(entry.path().string()));
         }
         return result;
@@ -99,6 +102,7 @@ BusRoute DataImporter::importFile(const std::string& routeFile) {
                 int minute_int = std::stoi(minute);
                 ptime now = second_clock::local_time();
                 ptime fullTime = ptime(now.date(), hours(hour) + minutes(minute_int));
+                BOOST_LOG_TRIVIAL(debug) << "Read hour " << to_simple_string(fullTime);
                 departureTimes.push_back(fullTime);
             }
         }

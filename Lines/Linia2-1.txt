@@ -1,0 +1,38 @@
+Linia: 2
+TRASA
+|  Strefowa / Zakład Karny 03	
+|  Strefowa / Elfa 01	1	1
+|  Łukasiewicza / ROMEX - nż 02	2	3
+BoWiD / Kospel 08	1	4
+BoWiD / Royal Greenland 03	1	5
+Mieszka I / BOWiD 05	1	6
+Mieszka I / Miła 03	1	7
+Mieszka I / Szczecińska 01	3	10
+Zwycięstwa / Krakusa i Wandy 02	3	13
+Zwycięstwa / Słowackiego 04	1	14
+Zwycięstwa / Plac Wolności 06	1	15
+Zwycięstwa / Clausiusa 08	2	17
+Zwycięstwa / Grottgera 10	2	19
+Zwycięstwa / Tetmajera 12	1	20
+Zwycięstwa / 4 Marca 14	1	21
+Zwycięstwa / Zielona 16	1	22
+Zwycięstwa / Św. Wojciecha 18	1	23
+|  Zwycięstwa / Chełmoniewo Pętla 15	1	23
+Zwycięstwa / Zdobywców Wału Pomorskiego 20	1	24
+|  Zdobywców Wału Pomorskiego / Wiśniowa 02	1	25
+|  Zdobywców Wału Pomorskiego / Westerplatte 01	1	26
+|  Sianowska / Zdobywców Wału Pomorskiego 01	2	25
+Lubiatowska / Chełmoniewo 02	1	26
+Lubiatowska / Łąkowa 05	2	27
+Lubiatowska / Łąkowa 04	1	28
+Lubiatowska / Żurawinowa - nż 06	1	29
+Lubiatowska / Zielone Wzgórze - nż 08	2	31
+Lubiatowska / Wioska Indiańska - nż 10	1	32
+Lubiatowska / Jeziorna - nż 12	1	33
+Lubiatowska / Jeziorna Pętla 13	1	34
+/TRASA
+GODZINY
+9: 15 44
+10: 18 46
+15: 33 54
+/GODZINY

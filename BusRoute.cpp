@@ -1,6 +1,7 @@
+#include <boost/log/trivial.hpp>
 #include "BusRoute.h"
 
-BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<ptime> departureTimeMinutes) : name(name), route(r), departureTimeMinutes(departureTimeMinutes) {
+BusRoute::BusRoute(const string& name, const list<RouteSegment> &r, list<ptime> departureTimeMinutes) : name(name), route(r), departureTimesFromOrigin(departureTimeMinutes) {
 }
 
 BusRoute::~BusRoute() {
@@ -24,7 +25,7 @@ list<ptime> BusRoute::getDepartureTime(BusStop& stop) {
     list<RouteSegment>::iterator it = route.begin();
 
     if (it->getOrigin().getName() == stop.getName()) {
-        return departureTimeMinutes;
+        return departureTimesFromOrigin;
     }
     int totalTimeTravel = 0;
     while (it != route.end()) {
@@ -34,9 +35,11 @@ list<ptime> BusRoute::getDepartureTime(BusStop& stop) {
         }
         it++;
     }
-    list<ptime>busStopDepartureTimes;
-    for (auto departureTime : departureTimeMinutes) {
-        ptime busStopDepartureTime = ptime(departureTime.date(), minutes(totalTimeTravel));
+    list<ptime> busStopDepartureTimes;
+    for (auto departureTime : departureTimesFromOrigin) {
+        BOOST_LOG_TRIVIAL(debug) << "Departure time from origin " << departureTime << ", totalTimeTravel=" << totalTimeTravel;
+        ptime busStopDepartureTime = ptime(departureTime + minutes(totalTimeTravel)); //todo add minutes to date
+        BOOST_LOG_TRIVIAL(debug) << "Departure time for bus stop " << stop.getName() << ":" << busStopDepartureTime;
         busStopDepartureTimes.push_back(busStopDepartureTime);
     }
     return busStopDepartureTimes;
